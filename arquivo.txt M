@@ -38,3 +38,8 @@ em: relativo ao tamanho da fonte do elemento pai.
 rem: relativo ao tamanho da fonte do elemento raiz (html).
 %: relativo ao tamanho do elemento  pai.
 vw e vh: raizelativo ao tamanho da janela do navegador.
+
+Resumo a diferenças
+Min-width > Largura minima. o elemento não pode ser menor que esse valor
+
+Max-width > Largura máxima. O elemento não pode ser maior que esse valor.

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 60px;
+    background-color:#893c6c;
+    border-radius: 2px;
+}
+
+
+.section-01 {
+    padding: 120px;
+    background-color: #6f646c;
+}
+
+.section-02 {
+    padding: 120px;
+    background-color: #4b365e;
+}
+
+footer {
+    padding: 90px;
+    background-color: #7b7066;
+}
+
+@media (max-width:480px) {
+    header {
+        background-color: rgb(26, 22, 22);
+    }
+}
+
+
+@media (max-width:480px) {
+  .section-01 {
+    background-color: rgb(43, 43, 228);
+  }
+}
+
+@media (max-width:480px) {
+    footer {
+        background-color: rgb(227, 195, 65);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .section-02 {
+        color: white;
+        background-color: pink;
+    }
+}
+
+Resumo a diferenças
+/*  Min-width > Largura minima. o elemento não pode ser menor que esse valor */
+/* Max-width > Largura máxima. O elemento não pode ser maior que esse valor. */
+   
