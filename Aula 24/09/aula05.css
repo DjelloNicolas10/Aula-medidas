@@ -1,123 +1,52 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*O box-sizing: border-box garante que o padding seja incluído no cálculo da largura, evitando que o conteúdo ultrapasse a tela.*/
+    box-sizing: border-box;
+    /*Garante o preenchimento/padding seja incluído no cálculo da largura, evitando o conteúdo ultrapasse a tela*/
 }
 
-header {
-    padding: 80px;
-    background-color: #005f6b;
-}
-
-/* Aqui estamos definindo que nosso HTML ocupe totalidade em relação a altura e largura da nossa página */
 html {
-   width: 100vw;
-   height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
 
 header {
-    padding: 10h;
-    background-color: #3f5f64;
-    width: 100wh;
-}
+    padding: min(5vh, 4rem); /*Ajustado o padding para ser mais flexível*/
+    background: linear-gradient(180deg,#9e9aa9 8.33%,#9ddbca 100%);
+    width: 100%; /*Colocamos a largura para 100% do espaço disponível*/
 
-.section-01 {
-    padding: 20vh; /*Preenchimento*/
-    background-color: rgba(255, 255, 0, 0.693); /*Definição cor de fundo*/
-    display: flex; /*Tornando a section flex*/
-    justify-content: space-between; /*Justidicando o conteúdo*/
-    align-items: center; /*Alinhamento os itens ao centro*/
-    width: 100vw;/*Definido a largura para 100%*/
-}
-
-.section-02 {
-    background-color: rgb(154, 187, 176);
-    padding: 20vh;
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /* Aqui começamos o posicionamento do header */
+    position: sticky; /*Posicionamento do Header usando o Stick, sendo um posicionamento fixo, porém distinto do Fixed*/
+    top: 0; /*Espaçamento superior zerado, fazendo com que o Header fique grudado ao top*/
+    left: 0; /*Espaçamento a esquerda zerado, fazendo com que o Header o fique grudado à esquerda*/
+
+    z-index: 999; /*Eixo de profundidade (Eixo Carteziano)*/
+
+    box-shadow: 0 0.21rem 0.5rem white; /*Primeiro valor sombra na direita (0) segundo valor sombra Bottom (0.21rem) terceiro valr gradiant da sombra (0.5rem)*/
+
 }
 
-/* trabalhamos na estilização da minha segunda section */
-.div-04 p {
-    font-size: 2em;
-    margin: 1.2em;
-}
-/* Trabalhamos na estilização da minha segunda imagem */
-.div-03 img {
-   margin: 5rem;
-   width: 30rem;
+header i {
+    color: white;
+    font-size: 6rem;
 }
 
-/* Aqui chamamos o parágrafo da primerira section para estilizar */
-.div-01 p {
-    font-size: 2em;
-    margin: 1.2em;
-}
+header button {
+    width: 13rem;
+    height: 1.5rem;
+    background-color: #1965b6;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    color: white;
 
-/* chamamos minha imagem para estilizar na minha primeira section */
-.div-02 img {
-   margin: 5rem;
-   width: 30rem;
-}
-
-
-
-@media (max-width: 766px) {
-    .section-01 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-}
-
-.div-02 img {
-    margin:0 auto; /*Aqui estou chamando a Imagem e definindo que a mesma fique com os valores superior/ inferior em 0 e as laterais sejam auto*/
-    width: 20rem; /*Largura da Imagem*/
-}
-
-.div-01 p {
-    font-size: 25px; /*Ajuste o tamanho da fonte para se adequar à tela menor*/
-    line-height: 1.5; /*Espaçamento entre linja para melhor legibilidade*/
-    width: 100%; /**/
-    margin: 1em;
-}
-
-@media (max-width: 766px) {
-    .section-02 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-}
-
-footer {
-    padding: 10vh;
-    background-color: #6ebac493;
-    width: 100wv;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    gap: 2em;
-}
-
-footer h2 {
-  font-size: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
 }
 
 
-footer i {
-    font-size: 2em;
-    margin: 1.5em;
-}
-
-footer i:hover {
-    color: rgb(208, 47, 42);
-    transition: 0.8s;
-}
+  
