@@ -67,6 +67,92 @@ header button {
     width: 100%; /* Alteramos de 100vw para 100% */
 }
 
+.section-03 {
+    background-color: #cccb76; /* Alterei a cor para diferenciar as sections */
+    padding: min(20vh, 6rem); /* Ajustado para flexibilidade */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Alteramos de 100vw para 100% */  
+}
+
+
+
+.container { /*Elemento Pai das caixas (3 div´s)*/
+    display: flex; /*Tornando ele flexivel*/
+    justify-content: center; /*Justificando os itens na Horizontal*/
+    align-items: center; /*Justificando os itens na Horizontal*/
+    margin-bottom: 10rem;  /*espaçamento inferior em relação a sessão*/
+    z-index: 1; /*Prioridade no eixo Z (eixo cartesiano)*/
+    flex-wrap: wrap; /*habilitando a quebra de linha das caixas caso necessarío*/
+    position: relative; /*Posicinamento relativo*/
+}
+
+.card { /*aqui estamos estilizando nossa caixa onde dentro estão os conteúdos*/
+    width: 200px; /*largura da caixa*/
+    height: 400px; /*altura da caixa*/
+    margin: 30px; /*espaçamento geral*/
+    box-shadow: 20px 20px 50px rgb(146, 90, 146); /*Sombra da caixa e cor*/
+    border-radius: 15px; /*arredondamento da borda*/
+    background: rgba(233, 167, 223, 0.288); /* Cor de fundo do elemento*/
+}
+
+.content { /*Aqui estamos estilizando as caixas dos conteúdos*/
+    padding: 20px; /*Preenchimento interno do conteúdo*/
+    text-align: center; /*Alinhamento o conteúdo ao centro*/
+    transform: translateY(50px); /*Estabelecendo um raio de 50px de espaço no eizo Y*/
+    opacity: 0.2; /*20% de opacidade*/ 
+    transition: 0.7s; /*Aplicando uma transição no evento*/
+}
+
+.content:hover {
+    opacity: 1; /*100% de visibilidade*/
+    transform: translateY(0px); /*Aplicando o retorno do conteúdo ao EizoY em 0*/
+}
+
+
+.content h2 { /*Subtitulo da caixa*/
+    position: absolute; /*Posicionamento absoluto em relação ao PAI */
+    right: 30px; /*Jogando ele 30px a direita*/
+    font-size: 5rem; /*tamanho da letra*/
+    color: rgb(114, 113, 113); /*Cor da letra - deixar no tranparente*/
+}
+
+
+.content h3 { /*Segundo subtítulo da caixa*/
+    font-size: 1.8em; /*Tamanho da letra*/
+    color: white; /*Cor da letra*/
+    z-index: 1; /*Prioridade no Eixo*/
+}
+
+.content p { /*Parágrafo da caixa*/
+   font-size: 0.8em; /*tamanho da letra*/
+   color: white; /*Cor da letra*/
+   font-weight: 300; /*Peso da fonte*/
+   margin-top: 4rem; /*Espaçamento superior*/
+}
+
+.content a { /*botão âncorado da caixa*/
+    padding: 8px 20px; /*preenchimento eixo X e Y*/
+    background: white; /*cor de fundo*/
+    color: black; /*Cor da letra*/
+    text-decoration: none; /*removendo da borda*/
+    border-radius: 15px; /*Arrendondamento da borda*/
+    font-weight: 500px; /*Peso da fonte*/
+    margin-top: 2.7rem; /*espaçamento*/
+    box-shadow: 0.5px 15 px black; /*Sombra da caixa*/
+    display: inline-block; /*Comportamento do botão em linha e sempre em bloco*/
+    position: relative; /*posicionamneto relativo*/
+}
+
+
+
+
+
+
+
+
+
 .div-01 p {
     font-size: 2em;
     margin: 1.2em;
