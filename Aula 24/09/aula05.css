@@ -68,7 +68,7 @@ header button {
 }
 
 .section-03 {
-    background-color: #cccb76; /* Alterei a cor para diferenciar as sections */
+    background-color: #c5bc7d; /* Alterei a cor para diferenciar as sections */
     padding: min(20vh, 6rem); /* Ajustado para flexibilidade */
     display: flex;
     justify-content: center;
@@ -101,7 +101,7 @@ header button {
     padding: 20px; /*Preenchimento interno do conteúdo*/
     text-align: center; /*Alinhamento o conteúdo ao centro*/
     transform: translateY(50px); /*Estabelecendo um raio de 50px de espaço no eizo Y*/
-    opacity: 0.2; /*20% de opacidade*/ 
+    opacity: 0.3; /*20% de opacidade*/ 
     transition: 0.7s; /*Aplicando uma transição no evento*/
 }
 
@@ -127,7 +127,7 @@ header button {
 
 .content p { /*Parágrafo da caixa*/
    font-size: 0.8em; /*tamanho da letra*/
-   color: white; /*Cor da letra*/
+   color: rgb(11, 11, 11); /*Cor da letra*/
    font-weight: 300; /*Peso da fonte*/
    margin-top: 4rem; /*Espaçamento superior*/
 }
